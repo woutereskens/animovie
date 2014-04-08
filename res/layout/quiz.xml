@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  	Application: animovie
+		Author: Wouter Eskens
+		API: The Movie Database (TMDb)
+		Database: SQLite 
+		Course: Applied Computer Sciences
+		School: Thomas More Kempen
+		Year: 2013-2014 -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".Quiz">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="5dip">
+    	
+       <TextView
+        android:id="@+id/quiz_amount_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quiz_amount_right" 
+        android:textStyle="bold"
+        android:textSize="28sp"/>
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    
+	    <ImageView
+	        android:id="@+id/quiz_picture"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/quiz_picture"/>
+    
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+	    
+	    <RadioGroup
+	        android:id="@+id/quiz_answers"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+
+	        <RadioButton
+	            android:id="@+id/quiz_answer_0"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="28sp"
+	            android:checked="true"/>
+
+	        <RadioButton
+	            android:id="@+id/quiz_answer_1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="28sp" />
+
+	        <RadioButton
+	            android:id="@+id/quiz_answer_2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="28sp" />
+	        
+    	</RadioGroup>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+		<Button
+	        android:id="@+id/quiz_next"
+	        style="?android:attr/buttonStyle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/quiz_next"
+	        android:onClick="onClickNext"/>
+        
+	</TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+		<Button
+	        android:id="@+id/quiz_exit"
+	        style="?android:attr/buttonStyle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/quiz_exit"
+	        android:onClick="onClickExit"/>
+        
+	</TableRow>
+	
+</TableLayout>

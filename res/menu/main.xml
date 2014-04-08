@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<!--  	Application: animovie
+		Author: Wouter Eskens
+		API: The Movie Database (TMDb)
+		Database: SQLite 
+		Course: Applied Computer Sciences
+		School: Thomas More Kempen
+		Year: 2013-2014 -->
+    
+    <!-- Home button -->
+    <item android:id="@+id/action_home"
+          android:icon="@drawable/ic_action_home"
+          android:title="@string/action_home"
+          android:showAsAction="ifRoom|withText"/>
+    
+	<!-- Search with people and movie options -->
+    <item android:id="@+id/action_search"
+          android:icon="@drawable/ic_action_search"
+          android:title="@string/action_search"
+          android:showAsAction="ifRoom|withText">
+          
+        <menu>
+            <item
+                android:id="@+id/action_search_movies"
+                android:title="@string/action_search_movies" />
+            <item
+                android:id="@+id/action_search_people"
+                android:title="@string/action_search_people" />
+		</menu>
+          
+    </item>
+    
+    <!-- Give the profile of the user -->
+    <item android:id="@+id/action_my_profile"
+          android:icon="@drawable/ic_action_person"
+          android:title="@string/action_my_profile"
+          android:showAsAction="ifRoom|withText">
+    </item>
+    
+    <!-- A little info about the application -->
+    <item android:id="@+id/action_about"
+          android:icon="@drawable/ic_action_about"
+          android:title="@string/action_about"
+          android:showAsAction="ifRoom|withText" />
+  
+</menu>

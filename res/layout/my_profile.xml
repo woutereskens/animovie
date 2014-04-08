@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  	Application: animovie
+		Author: Wouter Eskens
+		API: The Movie Database (TMDb)
+		Database: SQLite 
+		Course: Applied Computer Sciences
+		School: Thomas More Kempen
+		Year: 2013-2014 -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip">
+        
+        <TextView
+	        android:id="@+id/my_profile_username_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/my_profile_username_label" />
+        
+        <TextView
+	        android:id="@+id/my_profile_username"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/my_profile_username" />
+        
+	</TableRow>
+    
+    <TableRow
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip">
+    
+	    <TextView
+	        android:id="@+id/my_profile_email_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/my_profile_email_label" />
+	    
+	    <TextView
+	        android:id="@+id/my_profile_email"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/my_profile_email" />
+	    
+    </TableRow>
+    
+    <!--  <TextView
+    	android:id="@+id/my_profile_movies_label"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textStyle="bold"
+    	android:paddingLeft="5dip"
+    	android:text="@string/my_profile_movies_label" />
+    
+   	<Spinner
+	    android:id="@+id/my_profile_movies"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:drawSelectorOnTop="true"
+	    android:paddingTop="5dip"
+	    android:paddingLeft="5dip" /> -->
+    
+    <TableRow
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip">
+    
+    	<Button
+	        android:id="@+id/my_profile_quiz"
+	        style="?android:attr/buttonStyle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/my_profile_quiz"
+	        android:onClick="onClickQuiz"/>
+    	
+    </TableRow>
+    
+    <TableRow
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip">  
+        
+	    <Button
+	        android:id="@+id/my_profile_log_out"
+	        style="?android:attr/buttonStyle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/my_profile_log_out"
+	        android:onClick="onClickLogOut"/>
+    
+    </TableRow>
+	    
+</TableLayout>

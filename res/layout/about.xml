@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  	Application: animovie
+		Author: Wouter Eskens
+		API: The Movie Database (TMDb)
+		Database: SQLite 
+		Course: Applied Computer Sciences
+		School: Thomas More Kempen
+		Year: 2013-2014 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dip"
+    android:paddingTop="5dip"
+    tools:context=".About" >
+
+    <TextView
+        android:id="@+id/about_author_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_author_label"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/about_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_author" />
+    
+    <TextView
+        android:id="@+id/about_info_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_info_label"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/about_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_info" />
+    
+    <TextView
+        android:id="@+id/about_api_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_api_label"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/about_api"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_api" />
+
+</LinearLayout>

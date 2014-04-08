@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  	Application: animovie
+		Author: Wouter Eskens
+		API: The Movie Database (TMDb)
+		Database: SQLite 
+		Course: Applied Computer Sciences
+		School: Thomas More Kempen
+		Year: 2013-2014 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        >
+
+        <EditText
+            android:id="@+id/movie_search_search_box"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/movie_search_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_search_category_default"
+            android:onClick="onClickMovieSearch"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/movie_search_list_movies"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:paddingTop="5dip"
+        android:paddingLeft="5dip"/>
+    
+</LinearLayout>

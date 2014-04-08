@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  	Application: animovie
+		Author: Wouter Eskens
+		API: The Movie Database (TMDb)
+		Database: SQLite 
+		Course: Applied Computer Sciences
+		School: Thomas More Kempen
+		Year: 2013-2014 -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:paddingLeft="5dip"
+    android:paddingTop="5dip"
+    tools:context=".MainActivity">
+
+    <ImageView
+	        android:id="@+id/home_logo"
+	        android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+	        android:contentDescription="@string/home_logo"
+	        android:src="@drawable/animovie_icon" />
+    
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+        
+   		<TextView
+	        android:id="@+id/home_digital_clock"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/home_digital_clock" />
+	        
+	    <DigitalClock></DigitalClock>
+
+    </TableRow>
+    
+	<TextView
+        android:id="@+id/home_welcome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/home_welcome" />
+    
+    <TextView
+        android:id="@+id/home_author"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/home_author" />
+    	
+</TableLayout>

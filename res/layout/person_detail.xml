@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  	Application: animovie
+		Author: Wouter Eskens
+		API: The Movie Database (TMDb)
+		Database: SQLite 
+		Course: Applied Computer Sciences
+		School: Thomas More Kempen
+		Year: 2013-2014 -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".Person_Detail">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:ellipsize="end">
+        
+        <ImageView
+        		android:id="@+id/person_detail_picture"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:contentDescription="@string/person_detail_picture"
+        		android:paddingLeft="5dip"
+        		android:paddingTop="5dip" />
+        
+        	<LinearLayout
+        		android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="vertical"
+    			android:padding="5dip" >
+    			
+    				<TextView
+        				android:id="@+id/person_detail_name"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:text="@string/person_detail_name"
+        				android:textStyle="bold" />
+    				
+    				<TextView
+        				android:id="@+id/person_detail_info"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:text="@string/person_detail_info"
+        				android:ellipsize="end"
+        				android:singleLine="false"
+        				/>
+    				
+        	</LinearLayout>
+        	
+    </TableRow>
+
+    <TextView
+    	android:id="@+id/person_detail_movies_director_label"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textStyle="bold"
+    	android:paddingLeft="5dip"
+    	android:text="@string/person_detail_movies_director_label" />
+    
+    <Spinner
+    	android:id="@+id/person_detail_movies_director"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:drawSelectorOnTop="true"/>
+    
+    <TextView
+    	android:id="@+id/person_detail_movies_actor_label"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textStyle="bold"
+    	android:paddingLeft="5dip"
+    	android:text="@string/person_detail_movies_actor_label" />
+    
+    <Spinner
+    	android:id="@+id/person_detail_movies_actor"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:drawSelectorOnTop="true"/>
+    
+</TableLayout>

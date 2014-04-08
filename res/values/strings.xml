@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  	Application: animovie
+		Author: Wouter Eskens
+		API: The Movie Database (TMDb)
+		Database: SQLite 
+		Course: Applied Computer Sciences
+		School: Thomas More Kempen
+		Year: 2013-2014 -->
+<resources>
+    
+	<!-- Standard -->
+    <string name="app_name">animovie</string>
+    
+    <!-- Welcome screen -->
+    <string name="home_title">Home</string>
+    <string name="home_welcome">Welcome to animovie</string>
+    <string name="home_author">A production by Wouter Eskens</string>
+    <string name="home_digital_clock">Current time: </string>
+    <string name="home_logo">animovie icon</string>
+    
+    <!-- Action bar -->
+    <string name="action_search">Search</string>
+    <string name="action_my_profile">My Profile</string>
+    <string name="action_about">About</string>
+    <string name="action_home">Home</string>
+    <string name="action_search_movies">Movies</string>
+    <string name="action_search_people">People</string>
+
+    <!-- Login screen -->
+    <string name="dialog_signin_title">Login</string>
+    <string name="dialog_signin_username">Username</string>
+	<string name="dialog_signin_password">Password</string>
+	<string name="dialog_signin_register">Register</string>
+	<string name="dialog_signin_login">Login</string>
+	<string name="dialog_signin_cancel">Cancel</string>
+	
+    <!-- About -->
+    <string name="about_title">About</string>
+    <string name="about_author_label">Author</string>
+    <string name="about_author">The android application is made by Wouter Eskens, a student of Applied Computer Science at Thomas More Kempen.</string>
+    <string name="about_info_label">Info about the app</string>
+    <string name="about_info">Animovie is an application to search movies, actors and directors on the internet.</string>
+    <string name="about_api_label">API</string>
+    <string name="about_api">The application is using The Movie Database API. This API gives you many possibilities and is often updated.</string>
+    
+    <!-- Movie detail -->
+    <string name="movie_detail_label">Movie detail</string>
+    <string name="movie_detail_poster">poster</string>
+    <string name="movie_detail_title">X-Men</string>
+    <string name="movie_detail_info">Een film over mutanten</string>
+    <string name="movie_detail_director_label">Director</string>
+    <string name="movie_detail_actors_label">Actors</string>
+    <string name="movie_detail_add_movie">Add movie</string>
+    <string name="movie_detail_rate">Rate</string>
+    
+    <!-- Person detail -->
+    <string name="person_detail_info">October 12, 1968 in Sydney, New South Wales, Australia</string>
+    <string name="person_detail_name">Hugh Jackman</string>
+    <string name="person_detail_picture">poster</string>
+    <string name="person_detail_movies_director_label">Director of movies</string>
+    <string name="person_detail_movies_actor_label">Actor in movies</string>
+    <string name="person_detail_title">Person detail</string>
+    
+    <!-- My profile -->
+    <string name="my_profile_title">My profile</string>
+    <string name="my_profile_username_label">Username:</string>
+    <string name="my_profile_username">Wouter</string>
+    <string name="my_profile_email_label">Email:</string>
+    <string name="my_profile_email">wouter.eskens@hotmail.com</string>
+    <string name="my_profile_quiz">Take the quiz</string>
+    <string name="my_profile_log_out">Log out</string>
+    <string name="my_profile_movies_label">My movies</string>
+    
+    <!-- Register -->
+    <string name="register_title">Register</string>
+    <string name="register_username_label">Your new username</string>
+    <string name="register_email_label">Your email</string>
+    <string name="register_password_label">Your password</string>
+    <string name="register_register">Register</string>
+    
+    <!-- Movie search -->
+    <string name="movie_search_label">Movie search</string>
+    
+    <!-- People search -->
+    <string name="people_search_label">People search</string>
+    
+    <!-- Quiz -->
+    <string name="quiz_title">Quiz</string>
+    <string name="quiz_picture">Picture</string>
+    <string name="quiz_next">Next</string>
+    <string name="quiz_amount_right">Amount right: 0/0</string>
+    <string name="quiz_exit">Exit the game</string>
+    
+</resources>

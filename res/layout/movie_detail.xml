@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  	Application: animovie
+		Author: Wouter Eskens
+		API: The Movie Database (TMDb)
+		Database: SQLite 
+		Course: Applied Computer Sciences
+		School: Thomas More Kempen
+		Year: 2013-2014 -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".Movie_Detail">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:ellipsize="end">
+        
+        <ImageView
+        		android:id="@+id/movie_detail_poster"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:contentDescription="@string/movie_detail_poster" 
+        		android:paddingLeft="5dip"
+        		android:paddingTop="5dip"/>
+        
+        	<LinearLayout
+        		android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="vertical"
+    			android:padding="5dip">
+    			
+    				<TextView
+        				android:id="@+id/movie_detail_title"
+        				android:layout_width="wrap_content"
+        				android:layout_height="fill_parent"
+        				android:text="@string/movie_detail_title"
+        				android:textStyle="bold" />
+    				
+    				<TextView
+        				android:id="@+id/movie_detail_info"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:text="@string/movie_detail_info"
+        				android:ellipsize="end"
+        				android:singleLine="false"/>
+    				
+        	</LinearLayout>
+        	
+    </TableRow>
+        	
+    <RatingBar
+		android:id="@+id/movie_detail_rating_bar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="onClickRateMovie"/>
+    	
+    <TextView
+    	android:id="@+id/movie_detail_rating"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="20sp"
+    	android:paddingLeft="5dip" />
+    
+    <TextView
+    	android:id="@+id/movie_detail_director_label"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textStyle="bold"
+    	android:paddingLeft="5dip"
+    	android:text="@string/movie_detail_director_label" />
+    
+    <Spinner
+    	android:id="@+id/movie_detail_directors"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:drawSelectorOnTop="true"/>
+    
+    <TextView
+    	android:id="@+id/movie_detail_actors_label"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textStyle="bold"
+    	android:paddingLeft="5dip"
+    	android:text="@string/movie_detail_actors_label" />
+    
+    <Spinner
+    	android:id="@+id/movie_detail_actors"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:drawSelectorOnTop="true"/>
+    
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+		<Button
+	        android:id="@+id/movie_detail_add_movie"
+	        style="?android:attr/buttonStyle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/movie_detail_add_movie"
+	        android:onClick="onClickAddMovie"
+	        android:enabled="false" />
+        
+	</TableRow>
+    
+</TableLayout>
